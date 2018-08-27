@@ -1,0 +1,20 @@
+<%= form_with scope: book, url: books_path, local: true do |form| %>
+  <p>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </p>
+  <p>
+    <%= form.label :author %>
+    <%= form.text_field :author %>
+  </p>
+  <p>
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </p>
+  <p>
+    <%= form.label :url %>
+    <%= form.text_field :url %>
+  </p>
+
+  <%= form.submit %>
+<% end %>
